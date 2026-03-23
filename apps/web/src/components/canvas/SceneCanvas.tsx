@@ -9,9 +9,11 @@ import { Environment } from './Environment.three';
 import { SatelliteSystem } from './SatelliteSystem.three';
 import { CameraController } from './CameraController.three';
 import { useGitHub } from '@/hooks/useGitHub';
+import { useWebSocket } from '@/hooks/useWebSocket';
 
 export function SceneCanvas() {
   useGitHub();
+  useWebSocket();
 
   return (
     <div className="h-screen w-screen">

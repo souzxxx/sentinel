@@ -82,8 +82,8 @@ docker compose up -d                # Start full stack locally
 
 ## Current Phase
 
-Phase 3 — COMPLETE. Interaction, raycasting, GSAP camera fly-to, detail panel, HUD overlay, keyboard nav.
-Next: Phase 4 — Backend (FastAPI, WebSockets, real-time metrics)
+Phase 4 — COMPLETE. FastAPI backend, WebSocket metrics streaming, reactive core/rings.
+Next: Phase 5 — Visual Polish (post-processing, particles, shaders)
 
 ## Known Gotchas
 
