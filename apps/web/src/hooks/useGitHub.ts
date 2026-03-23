@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 import { useGitHubStore } from '@/stores/githubStore';
 
-const DEFAULT_USERNAME = 'souzxx';
+const DEFAULT_USERNAME = 'souzxxx';
 
 export function useGitHub(username: string = DEFAULT_USERNAME) {
   const fetchRepos = useGitHubStore((s) => s.fetchRepos);
