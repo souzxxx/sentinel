@@ -332,8 +332,6 @@ Visual de nível profissional — bloom neon, partículas, shaders custom. A cen
 
 | Critério | Meta |
 |---|---|
-| Tempo total de desenvolvimento | 12-16 semanas |
-| Commits significativos | 150+ |
 | README com GIF/vídeo | ✅ |
 | Deploy público funcional | ✅ |
 | Backend com WebSockets | ✅ |
