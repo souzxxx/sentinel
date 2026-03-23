@@ -63,6 +63,8 @@ sentinel/
 cd apps/web && npm run dev          # Dev server (localhost:3000)
 cd apps/web && npm run build        # Production build
 cd apps/web && npm run lint         # ESLint check
+cd apps/web && npm test            # Vitest tests
+cd apps/web && npm run test:watch  # Vitest watch mode
 
 # Backend
 cd apps/api && uvicorn app.main:app --reload   # Dev server (localhost:8000)
@@ -80,7 +82,8 @@ docker compose up -d                # Start full stack locally
 
 ## Current Phase
 
-Phase 1 — Core Scene (fundamentos Three.js, esfera pulsante, ambiente base, câmera orbital)
+Phase 3 — COMPLETE. Interaction, raycasting, GSAP camera fly-to, detail panel, HUD overlay, keyboard nav.
+Next: Phase 4 — Backend (FastAPI, WebSockets, real-time metrics)
 
 ## Known Gotchas
 
