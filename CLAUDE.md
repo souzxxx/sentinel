@@ -82,8 +82,7 @@ docker compose up -d                # Start full stack locally
 
 ## Current Phase
 
-Phase 5 — COMPLETE. Post-processing, particles, custom GLSL shaders, glitch effects.
-Next: Phase 6 — Deploy & Showcase (README, CI/CD, performance, demo)
+Phase 6 — COMPLETE. All phases done. CI/CD, README, meta tags, loading screen, license.
 
 ## Known Gotchas
 
