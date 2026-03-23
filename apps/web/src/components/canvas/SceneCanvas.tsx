@@ -6,8 +6,11 @@ import { SCENE, COLORS } from '@/lib/theme';
 import { CoreSphere } from './CoreSphere.three';
 import { OrbitalRing } from './OrbitalRing.three';
 import { Environment } from './Environment.three';
+import { SatelliteSystem } from './SatelliteSystem.three';
+import { useGitHub } from '@/hooks/useGitHub';
 
 export function SceneCanvas() {
+  useGitHub();
   return (
     <div className="h-screen w-screen">
       <Canvas
@@ -25,6 +28,7 @@ export function SceneCanvas() {
         <CoreSphere />
         <OrbitalRing />
         <Environment />
+        <SatelliteSystem />
         <OrbitControls
           enableDamping
           dampingFactor={0.05}
