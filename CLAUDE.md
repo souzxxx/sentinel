@@ -82,8 +82,8 @@ docker compose up -d                # Start full stack locally
 
 ## Current Phase
 
-Phase 4 — COMPLETE. FastAPI backend, WebSocket metrics streaming, reactive core/rings.
-Next: Phase 5 — Visual Polish (post-processing, particles, shaders)
+Phase 5 — COMPLETE. Post-processing, particles, custom GLSL shaders, glitch effects.
+Next: Phase 6 — Deploy & Showcase (README, CI/CD, performance, demo)
 
 ## Known Gotchas
 

@@ -2,6 +2,8 @@
 
 import { Stars } from '@react-three/drei';
 import { SCENE, COLORS } from '@/lib/theme';
+import { HoloGrid } from './HoloGrid.three';
+import { SpaceDust } from './SpaceDust.three';
 
 export function Environment() {
   return (
@@ -28,13 +30,11 @@ export function Environment() {
         speed={0.5}
       />
 
-      {/* Grid floor */}
-      <gridHelper
-        args={[SCENE.gridSize, SCENE.gridDivisions, COLORS.gridColor, COLORS.gridColor]}
-        position={[0, -3, 0]}
-        material-transparent
-        material-opacity={COLORS.gridOpacity}
-      />
+      {/* Holographic grid floor (custom shader) */}
+      <HoloGrid />
+
+      {/* Floating space dust particles */}
+      <SpaceDust />
     </>
   );
 }
