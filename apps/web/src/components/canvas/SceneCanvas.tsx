@@ -14,6 +14,8 @@ import { PostProcessing } from './PostProcessing.three';
 import { CameraController } from './CameraController.three';
 import { useGitHub } from '@/hooks/useGitHub';
 import { useWebSocket } from '@/hooks/useWebSocket';
+import { useGitHubStore } from '@/stores/githubStore';
+import { useSceneStore } from '@/stores/sceneStore';
 
 export function SceneCanvas() {
   useGitHub();
@@ -31,6 +33,13 @@ export function SceneCanvas() {
         gl={{ antialias: true, toneMapping: 4 /* ACESFilmicToneMapping */ }}
         onCreated={({ gl }) => {
           gl.setClearColor(COLORS.sceneBg);
+        }}
+        onPointerMissed={() => {
+          const { selectedRepoId, selectRepo } = useGitHubStore.getState();
+          if (selectedRepoId !== null) {
+            selectRepo(null);
+            useSceneStore.getState().resetCamera();
+          }
         }}
       >
         <Suspense fallback={null}>
